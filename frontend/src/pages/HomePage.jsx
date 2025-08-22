@@ -42,6 +42,14 @@ const HomePage = () => {
       <NavBar />
       {isRateLimited && <RateLimitedUI />}
 
+      <div className="mx-auto max-w-7xl text-left px-5 md:px-10 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl0 text-blue-950">
+        <span className="font-bold text-[18px] md:text-[24px]">Welcome to Dunkin Do Notes!!!</span>
+        <div>
+          <span className="text-[16px] md:text-[20px]">where every great idea begins with a note.</span>
+        </div>
+      </div>
+
+
       <div className="max-w-7xl mx-auto p-4 mt-6">
         {loading && <div className="text-center text-primary py-10"><img src={loadingSpinner} alt="Loading..." className="mx-auto w-12 h-12" /></div>}
 
